@@ -1,0 +1,19 @@
+algoritmo "quadrados_impares"
+var
+   i, quadrado: inteiro
+   vet[10]: inteiro // Vetor para armazenar os quadrados dos 10 números ímpares no intervalo de 1 a 20
+   indice: inteiro = 0
+inicio
+   // Preenchendo o vetor com o quadrado dos números ímpares
+   para i de 1 ate 20 passo 2 faça
+      quadrado <- i * i
+      vet[indice] <- quadrado
+      indice <- indice + 1
+   fimpara
+
+   // Imprimindo os valores armazenados no vetor
+   escreva("Quadrados dos números ímpares no intervalo de 1 a 20:\n")
+   para i de 0 ate 9 faça
+      escreva(vet[i], "\n")
+   fimpara
+fimalgoritmo
